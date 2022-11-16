@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Kaushal Kishor</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Kaushal Resume" name="keywords">
     <meta content="Kaushal resume" name="description">
 
@@ -25,6 +25,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -49,7 +50,33 @@
                 <!--<a href="#blog" class="nav-item nav-link">Blog</a>-->
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
+
+        <!--Login Start-->
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-outline-primary d-none d-lg-block">Login</button>
+            <!--<div id="id01" class="modal">
+                 <form class="modal-content animate" action="/action_page.php" method="post">
+                   <div class="imgcontainer">
+                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                     <img src="img\kaushal2.jpg" alt="Avatar" class="avatar">
+                   </div>
+
+                   <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit">Login</button>
+                        <label><input type="checkbox" checked="checked" name="remember"> Remember me </label>
+                   </div>
+
+                   <div class="container" style="background-color:#f1f1f1">
+                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                     <span class="psw">Forgot <a href="#">password?</a></span>
+                   </div>
+                 </form>
+            </div>-->
+            <!--Login End-->
         </div>
     </nav>
     <!-- Navbar End -->
@@ -125,8 +152,8 @@
                         <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Hadapsar, Pune, MH, India</span></h6></div>
                         <div class="col-sm-6 py-2"><h6>Notice Period: <span class="text-secondary">Immediately</span></h6></div>
                     </div>
-                    <a href="" class="btn btn-outline-primary mr-4">Hire Me</a>
-                    <a href="" class="btn btn-outline-primary">Learn More</a>
+                    <a href="mailto:kaushalm797@gmail.com" class="btn btn-outline-primary mr-4">Hire Me</a>
+                    <a href="tel:9028503800" class="btn btn-outline-primary">Call Me</a>
                 </div>
             </div>
         </div>
@@ -587,6 +614,16 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+     if (event.target == modal) {
+        modal.style.display = "none";
+        }
+    }
+    </script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
